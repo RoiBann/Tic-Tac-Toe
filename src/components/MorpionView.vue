@@ -22,6 +22,7 @@ export default {
     }
   },
   methods: {
+    // Fonction qui gère le clique sur les cases
     gestionClicCase: function(indexCase){
       if (this.etatJeu[indexCase] != "" || !this.jeuActif){
         return
@@ -30,10 +31,12 @@ export default {
 
       this.verifgagne();
     },
+    // Fonction qui vérifie s'il y a un vainqueur ou égalité
     verifgagne: function (){
       
       let tourGagnant = false
 
+      // Vérifie si une des conditions de victoire est valide
       for (let conditionVictoire of this.conditionsVictoire){
         let val1 = this.etatJeu[conditionVictoire[0]]
         let val2 = this.etatJeu[conditionVictoire[1]]
@@ -52,6 +55,7 @@ export default {
         this.jeuActif = false
         return
       }
+      // Vérifie s'il y a égalité
       if (!this.etatJeu.includes("")){
         this.status = `Egalité`
         this.jeuActif = false
@@ -60,7 +64,7 @@ export default {
       this.joueurActif = this.joueurActif == "X" ? "O" : "X"
       this.status = `Joueur ${this.joueurActif} doit jouer`
     },
-
+    // Fonction permettant de réinitialiser le jeu et les données
     recommencer: function (){
       this.joueurActif = "X"
       this.jeuActif = true
