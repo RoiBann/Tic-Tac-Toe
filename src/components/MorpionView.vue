@@ -77,7 +77,7 @@ export default {
 <template>
 
   <main>
-    <h1>Morpion</h1>
+    <h1 class="morpion">Morpion</h1>
     <Transition>
       <section id="jeu" v-if="jeuActif">
         <div v-for="(item, index) in etatJeu" :key="index" data-index="0" class="case" @click="gestionClicCase(index)">
@@ -126,8 +126,14 @@ export default {
 
 #recommencer {
     margin: 10px auto;
-    background-color: #C7B461;
-    border-color: #FAE37A;
+    background-color: #FBF1C6;
+    border-color: #C7B461;
+}
+
+.morpion {
+  color: #C7B461;
+  -webkit-text-stroke: #7A6F3C 1px;
+  letter-spacing: 0.4rem;
 }
 
 .v-enter-active {
