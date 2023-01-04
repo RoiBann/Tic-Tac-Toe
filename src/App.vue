@@ -1,15 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<MorpionView></MorpionView>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MorpionView from './components/MorpionView.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MorpionView
   }
 }
 </script>

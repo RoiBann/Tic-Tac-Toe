@@ -1,24 +1,28 @@
-# tic-tac-toe
 
-## Project setup
-```
-npm install
-```
+# Tic-Tac-Toe (Morpion)
 
-### Compiles and hot-reloads for development
+Jeu du morpion réalisé en Vue3.js
+
+
+
+
+## Installation
+
+Installer Tic-tac-Toe avec npm
+
+```bash
+  cd tic-tac-toe
+  npm install 
 ```
+    
+## Lancement
+
+```bash
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Auteur
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- [@RoiBann](https://github.com/RoiBann) (Chauveau Emmanuel)
+
